@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('ficha_diretors', function (Blueprint $table) {
+        Schema::create('ficha_tecnica__diretors', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });
@@ -22,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('ficha_diretors');
+        Schema::dropIfExists('ficha_tecnica__diretors');
     }
 };
